@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Cricket.css" />
+    <title>Cricket Game</title>
+  </head>
+  <body>
+    <h1>Cricket Game</h1>
+    <button
+    class="choice-button"
+      onclick="
+      let computerChoice = generateComputerChoice();
+      let resultMsg = getResult('Bat',computerChoice);
+      getShowResult('Bat',computerChoice,resultMsg);
+     "
+    >
+    <img src="image/bat2-removebg-preview.png" alt="Bat image" class="image-choice">
+    </button>
+
+    <button
+    class="choice-button"
+      onclick="
+     computerChoice = generateComputerChoice();
+     resultMsg = getResult('Ball',computerChoice);
+     getShowResult('Ball',computerChoice,resultMsg)
+     "
+    >
+    <img src="image/ball-removebg-preview.png" alt="Ball image" class="image-choice">
+    </button>
+
+    <button
+    class="choice-button"
+
+      onclick="
+     computerChoice = generateComputerChoice();
+     resultMsg = getResult('Stump',computerChoice);
+     getShowResult('Stump',computerChoice,resultMsg)
+     "
+    >
+    <img src="image/Stump-removebg-preview (1).png" alt="Stump image" class="image-choice">
+    </button>
+
+    
+    <h3 id="user-Move"></h3>
+    <h3 id="computer-Move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="Score"></h3>
+    <button
+      onclick="
+      localStorage.clear();
+      resetScore();
+     "
+
+     class="reset-button"
+    >
+      Reset
+    </button>
+    <script src="/Projects/Cricket_Game/cricket.js"></script>
+  </body>
+</html>

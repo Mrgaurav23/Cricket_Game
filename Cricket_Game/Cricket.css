@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+    background-color: azure;
+}
+
+.choice-button{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: rgb(114, 144, 114);
+    cursor: pointer;
+}
+
+.image-choice{
+    width: 70px;
+}
+
+.reset-button{
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: 300;
+    background-color: rgb(114, 144, 114);
+    border: 1px solid black;
+    border-radius: 22px;
+    padding: 8px 16px;
+}
+
+.reset-button:hover{
+    cursor: pointer;
+    background-color: rgb(158, 183, 145);
+}
